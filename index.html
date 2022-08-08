@@ -7,48 +7,91 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script scr="./main.js" defer></script>
   </head>
   <body>
     <div class="container">
       <nav class="sidebar">
         <a href="#" class="header">
-          <img src="./images/logo.svg" alt="" />
+          <img src="./images/logo.svg" alt="" draggable="false" />
           <h1>Sprintboard</h1>
         </a>
         <div class="menu">
           <button href="#" class="home">
-            <img src="./images/home.svg" alt="" />
+            <img src="./images/home.svg" alt="" draggable="false" />
             <p class="side-para">Home</p>
           </button>
           <button href="#" class="friends">
-            <img src="./images/friends.svg" alt="" />
+            <img src="./images/friends.svg" alt="" draggable="false" />
             <p class="side-para">Friends</p>
           </button>
           <button href="#" class="messages">
-            <img src="./images/messages.svg" alt="" />
+            <img src="./images/messages.svg" alt="" draggable="false" />
             <p class="side-para">Messages</p>
           </button>
           <button href="#" class="projects">
-            <img src="./images/my_projects.svg" alt="" />
+            <img src="./images/my_projects.svg" alt="" draggable="false" />
             <p class="side-para">My Projects</p>
           </button>
           <div class="empty-space"></div>
           <button href="#" class="settings">
-            <img src="./images/settings.svg" alt="" />
+            <img src="./images/settings.svg" alt="" draggable="false" />
             <p class="side-para">Settings</p>
           </button>
           <button href="#" class="feedback">
-            <img src="./images/feedback.svg" alt="" />
+            <img src="./images/feedback.svg" alt="" draggable="false" />
             <p class="side-para">Feedback</p>
           </button>
         </div>
         <p class="copyright">&copy; qvarkk 2022</p>
+        <button class="swap-scheme" id="swap-scheme">
+          <img
+            src="./images/dark_mode.svg"
+            alt="Swap to dark mode"
+            draggable="false"
+          />
+        </button>
       </nav>
-      <main class="main"></main>
+      <main class="main">
+        <nav class="topbar">
+          <div class="searchbar">
+            <label for="search"
+              ><img
+                class="search-img change-color"
+                src="./images/search.svg"
+                alt=""
+                draggable="false"
+            /></label>
+            <input type="text" name="search" id="search" class="search-input" />
+          </div>
+          <div class="profile">
+            <button class="notifications-button">
+              <img
+                src="./images/notifications.svg"
+                alt="Notifications"
+                class="notifications change-color"
+                draggable="false"
+              />
+            </button>
+            <a class="profile-link" href="#">
+              <img
+                class="pfp-link"
+                src="./images/pfp.jpg"
+                alt="Profile picture"
+                draggable="false"
+              />
+              <p class="username">空条承太郎</p></a
+            >
+          </div>
+          <div class="profile-tab"></div>
+        </nav>
+        <section class="profile-actions"></section>
+        <section class="workspace"></section>
+      </main>
     </div>
   </body>
 </html>
