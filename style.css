@@ -6,6 +6,8 @@
   --accent-color: #0f172a;
   --bg-color-300: #475569;
   --bg-color-700: #334155;
+
+  --filter: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -15,6 +17,8 @@
     --accent-color: #0ea5e9;
     --bg-color-300: #f8fafc;
     --bg-color-700: #cbd5e1;
+
+    --filter: invert(1);
   }
 }
 
@@ -122,6 +126,121 @@ body {
   font-size: 1rem;
 }
 
+.swap-scheme {
+  position: absolute;
+  bottom: 10px;
+  left: 250px;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+.swap-scheme:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+.swap-scheme:active {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.change-color {
+  filter: var(--filter);
+}
+
 .main {
   height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 2fr 13fr;
+}
+
+.topbar {
+  padding: 5px 40px 5px 20px;
+  background-color: var(--bg-color-300);
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  border-bottom: 2px solid var(--bg-color-700);
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.search-img {
+  height: 28px;
+  width: 28px;
+}
+
+.search-input {
+  color: var(--text-color-primary);
+  font-size: 1.3rem;
+  padding: 0 15px;
+  margin-left: 10px;
+  background-color: var(--bg-color-700);
+  width: 80%;
+  height: 50%;
+  border: none;
+  outline: none;
+  border-radius: 1000px;
+}
+
+.profile {
+  justify-self: end;
+}
+
+.profile,
+.profile-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.notifications-button {
+  background-color: transparent;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.notifications-button:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+.notifications-button:active {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.notifications {
+  height: 32px;
+  width: 32px;
+}
+
+.pfp-link {
+  border: 2px solid white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.username {
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.profile-actions {
+  background-color: var(--bg-color-300);
+}
+
+.workspace {
+  background-color: var(--bg-color-700);
 }
