@@ -58,8 +58,7 @@ body {
   height: 100vh;
   background-color: var(--accent-color);
   box-shadow: 3px 0 10px rgba(0, 0, 0, 0.33);
-  z-index: 10;
-  border-radius: 0 10px 10px 0;
+  z-index: 9;
 }
 
 .header {
@@ -161,7 +160,7 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
-  border-bottom: 2px solid var(--bg-color-700);
+  z-index: 11;
 }
 
 .searchbar {
@@ -242,7 +241,70 @@ body {
 }
 
 .profile-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 80px 5px 60px;
   background-color: var(--bg-color-300);
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.15);
+  z-index: 11;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.greeting > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pfp-greet {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.greeting > div > p:nth-child(1) {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.greeting > div > p:nth-child(2) {
+  font-weight: 700;
+  font-size: 1.35rem;
+}
+
+.post-actions {
+  height: 100%;
+  width: 33%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.post-actions > button {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-color-side);
+  height: 45%;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 40px;
+}
+
+.post-actions > button:hover {
+  filter: grayscale(15%);
+}
+
+.post-actions > button:active {
+  filter: grayscale(30%);
 }
 
 .workspace {
@@ -256,5 +318,9 @@ body {
 
   .profile {
     margin-right: 5px;
+  }
+
+  .profile-actions {
+    padding: 5px 25px 5px 25px;
   }
 }
