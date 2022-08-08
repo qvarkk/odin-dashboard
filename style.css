@@ -1,0 +1,28 @@
+:root {
+  --accent-color: #0ea5e9;
+  --bg-color-300: #f8fafc;
+  --bg-color-700: #cbd5e1;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+  height: 100vh;
+  background-color: var(--accent-color);
+}
+
+.main {
+  height: 100vh;
+  background-color: var(--bg-color-300);
+}
