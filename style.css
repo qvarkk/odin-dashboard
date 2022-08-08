@@ -165,9 +165,12 @@ body {
 }
 
 .searchbar {
+  margin-left: 40px;
+  justify-self: start;
   display: flex;
   align-items: center;
   height: 100%;
+  width: 100%;
 }
 
 .search-img {
@@ -190,6 +193,7 @@ body {
 
 .profile {
   justify-self: end;
+  margin-right: 40px;
 }
 
 .profile,
@@ -243,4 +247,14 @@ body {
 
 .workspace {
   background-color: var(--bg-color-700);
+}
+
+@media (max-width: 1048px) {
+  .searchbar {
+    margin-left: 5px;
+  }
+
+  .profile {
+    margin-right: 5px;
+  }
 }
