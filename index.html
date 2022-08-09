@@ -21,28 +21,28 @@
           <h1>Sprintboard</h1>
         </a>
         <div class="menu">
-          <button href="#" class="home">
+          <button href="#" id="home">
             <img src="./images/home.svg" alt="" draggable="false" />
             <p class="side-para">Home</p>
           </button>
-          <button href="#" class="friends">
+          <button href="#" id="friends">
             <img src="./images/friends.svg" alt="" draggable="false" />
             <p class="side-para">Friends</p>
           </button>
-          <button href="#" class="messages">
+          <button href="#" id="messages">
             <img src="./images/messages.svg" alt="" draggable="false" />
             <p class="side-para">Messages</p>
           </button>
-          <button href="#" class="projects">
-            <img src="./images/my_projects.svg" alt="" draggable="false" />
-            <p class="side-para">My Projects</p>
+          <button href="#" id="favorites">
+            <img src="./images/favorite_fill.svg" alt="" draggable="false" />
+            <p class="side-para">Favorites</p>
           </button>
           <div class="empty-space"></div>
-          <button href="#" class="settings">
+          <button href="#" id="settings">
             <img src="./images/settings.svg" alt="" draggable="false" />
             <p class="side-para">Settings</p>
           </button>
-          <button href="#" class="feedback">
+          <button href="#" id="feedback">
             <img src="./images/feedback.svg" alt="" draggable="false" />
             <p class="side-para">Feedback</p>
           </button>
@@ -90,19 +90,289 @@
         </nav>
         <section class="profile-actions">
           <div class="greeting">
-            <img class="pfp-greet" src="./images/pfp.jpg" alt="" />
+            <img
+              class="pfp-greet"
+              src="./images/pfp.jpg"
+              alt=""
+              draggable="false"
+            />
             <div>
               <p>Hi there,</p>
               <p>空条 承太郎 (@yareyare)</p>
             </div>
           </div>
           <div class="post-actions">
-            <button class="create-button">Create</button>
-            <button class="upload-button">Upload</button>
-            <button class="draft-button notification-bubble">Draft</button>
+            <button>Create</button>
+            <button>Upload</button>
+            <button>Draft</button>
           </div>
         </section>
-        <section class="workspace"></section>
+        <section class="workspace">
+          <h2>Your Projects</h2>
+          <h2>News</h2>
+          <div class="your-projects">
+            <div class="project-tile">
+              <div class="post-text">
+                <h2>Lorem, ipsum.</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita animi autem omnis. Quae unde ullam iusto pariatur
+                  nemo totam eligendi porro distinctio.
+                </p>
+              </div>
+              <div class="post-buttons">
+                <button class="share">
+                  <img
+                    src="./images/share.svg"
+                    alt=""
+                    class="change-color"
+                    draggable="false"
+                  />
+                </button>
+                <button class="comment">
+                  <img
+                    src="./images/comment.svg"
+                    alt=""
+                    class="change-color"
+                    draggable="false"
+                  />
+                </button>
+                <button class="favorite">
+                  <img
+                    src="./images/favorite.svg"
+                    alt=""
+                    class="change-color"
+                    draggable="false"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="project-tile">
+              <div class="post-text">
+                <h2>Lorem, ipsum.</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita animi autem omnis. Quae unde ullam iusto pariatur
+                  nemo totam eligendi porro distinctio.
+                </p>
+              </div>
+              <div class="post-buttons">
+                <button class="share">
+                  <img
+                    src="./images/share.svg"
+                    alt=""
+                    class="change-color"
+                    draggable="false"
+                  />
+                </button>
+                <button class="comment">
+                  <img
+                    src="./images/comment.svg"
+                    alt=""
+                    class="change-color"
+                    draggable="false"
+                  />
+                </button>
+                <button class="favorite">
+                  <img
+                    src="./images/favorite.svg"
+                    alt=""
+                    class="change-color"
+                    draggable="false"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="project-tile">
+              <div class="post-text">
+                <h2>Start Platinum</h2>
+                <p>
+                  Star Platinum is a humanoid Stand, resembling a tall,
+                  well-built man of similar proportions to Jotaro, if not more
+                  muscular. In colored art, its skin is often a hue between
+                  purple, blue, green, and small bits of gold. Its face and body
+                  have varying colors.
+                </p>
+              </div>
+              <div class="post-buttons">
+                <button class="share">
+                  <img
+                    src="./images/share.svg"
+                    alt=""
+                    class="change-color"
+                    draggable="false"
+                  />
+                </button>
+                <button class="comment">
+                  <img
+                    src="./images/comment.svg"
+                    alt=""
+                    class="change-color"
+                    draggable="false"
+                  />
+                </button>
+                <button class="favorite">
+                  <img
+                    src="./images/favorite_fill.svg"
+                    alt=""
+                    class="change-color"
+                    draggable="false"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="project-tile">
+              <div class="post-text">
+                <h2>Lorem, ipsum.</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita animi autem omnis. Quae unde ullam iusto pariatur
+                  nemo totam eligendi porro distinctio.
+                </p>
+              </div>
+              <div class="post-buttons">
+                <button class="share">
+                  <img
+                    src="./images/share.svg"
+                    alt=""
+                    class="change-color"
+                    draggable="false"
+                  />
+                </button>
+                <button class="comment">
+                  <img
+                    src="./images/comment.svg"
+                    alt=""
+                    class="change-color"
+                    draggable="false"
+                  />
+                </button>
+                <button class="favorite">
+                  <img
+                    src="./images/favorite.svg"
+                    alt=""
+                    class="change-color"
+                    draggable="false"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="project-tile">
+              <div class="post-text">
+                <h2>Lorem, ipsum.</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita animi autem omnis. Quae unde ullam iusto pariatur
+                  nemo totam eligendi porro distinctio.
+                </p>
+              </div>
+              <div class="post-buttons">
+                <button class="share">
+                  <img
+                    src="./images/share.svg"
+                    alt=""
+                    class="change-color"
+                    draggable="false"
+                  />
+                </button>
+                <button class="comment">
+                  <img
+                    src="./images/comment.svg"
+                    alt=""
+                    class="change-color"
+                    draggable="false"
+                  />
+                </button>
+                <button class="favorite">
+                  <img
+                    src="./images/favorite.svg"
+                    alt=""
+                    class="change-color"
+                    draggable="false"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="project-tile">
+              <div class="post-text">
+                <h2>Lorem, ipsum.</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita animi autem omnis. Quae unde ullam iusto pariatur
+                  nemo totam eligendi porro distinctio.
+                </p>
+              </div>
+              <div class="post-buttons">
+                <button class="share">
+                  <img
+                    src="./images/share.svg"
+                    alt=""
+                    class="change-color"
+                    draggable="false"
+                  />
+                </button>
+                <button class="comment">
+                  <img
+                    src="./images/comment.svg"
+                    alt=""
+                    class="change-color"
+                    draggable="false"
+                  />
+                </button>
+                <button class="favorite">
+                  <img
+                    src="./images/favorite.svg"
+                    alt=""
+                    class="change-color"
+                    draggable="false"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="news">
+            <div class="newsie">
+              <h3>Lorem something</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae, voluptas.
+              </p>
+            </div>
+            <div class="newsie">
+              <h3>Lorem something</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae, voluptas.
+              </p>
+            </div>
+            <div class="newsie">
+              <h3>Lorem something</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae, voluptas.
+              </p>
+            </div>
+          </div>
+          <h2>Trending Now</h2>
+          <div class="trending">
+            <div class="trend">
+              <h3>#oraoraoraoraoraoraora</h3>
+              <p>69m posts recently in your region</p>
+            </div>
+            <div class="trend">
+              <h3>#oraoraoraoraoraoraora</h3>
+              <p>69m posts recently in your region</p>
+            </div>
+            <div class="trend">
+              <h3>#oraoraoraoraoraoraora</h3>
+              <p>69m posts recently in your region</p>
+            </div>
+            <div class="trend">
+              <h3>#oraoraoraoraoraoraora</h3>
+              <p>69m posts recently in your region</p>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   </body>
