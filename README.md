@@ -1,3 +1,4 @@
-# odin-dashboard
+# Odin Dashboard
 
-I actually like this one, but it yet again lacks scaling support
+Dashboard made for the Odin project exercise.
+Doesn't support scaling :(
